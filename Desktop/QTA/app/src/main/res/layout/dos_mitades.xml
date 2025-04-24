@@ -51,15 +51,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <EditText
-        android:id="@+id/etPalabras"
+    <TextView
+        android:id="@+id/tvInputLabel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Ingresa una cadena de caracteres"
+        android:text="Ingresa una cadena de caracteres:"
+        android:textSize="12sp"
+        android:textColor="#666666"
         android:layout_marginTop="26dp"
         android:layout_marginHorizontal="16dp"
-        android:padding="10dp"
         app:layout_constraintTop_toBottomOf="@id/tvInstrucciones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPalabras"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:background="#F0F4C3"
+        app:layout_constraintTop_toBottomOf="@id/tvInputLabel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -70,8 +86,36 @@
         android:text="Solucionar"
         android:backgroundTint="#3EE19C"
         android:textColor="#000000"
-        android:layout_marginTop="34dp"
-        app:layout_constraintTop_toBottomOf="@id/etPalabras"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/tvPalabras"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvResultadoLabel"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text=
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnSolucionar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="#F0F4C3"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultadoLabel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -79,8 +123,7 @@
         android:id="@+id/linearLayoutMenu"
         android:layout_width="0dp"
         android:layout_height="56dp"
-        android:background="#E0F2F1"
-        android:orientation="horizontal"
+        android:background="#3EE19C"  android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -92,6 +135,11 @@
             android:gravity="center"
             android:orientation="vertical">
 
+            <ImageView
+                android:id="@+id/btnMitades"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/v1_stroke"  />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -107,6 +155,12 @@
             android:gravity="center"
             android:orientation="vertical">
 
+            <ImageView
+                android:id="@+id/btnPalabras"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/v2_stroke"  />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -121,6 +175,11 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
+            <ImageView
+                android:id="@+id/btnFragmento"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/v3_stroke"  />
 
             <TextView
                 android:layout_width="wrap_content"
