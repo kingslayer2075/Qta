@@ -176,7 +176,7 @@
             android:gravity="center"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/btnFragmento"
+                android:id="@+id/btnFragmentos"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/v3_stroke"  />

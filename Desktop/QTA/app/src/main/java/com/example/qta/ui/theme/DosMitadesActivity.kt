@@ -27,7 +27,7 @@ class DosMitadesActivity : AppCompatActivity() {
 
         btnMitades = findViewById(R.id.btnMitades)
         btnPalabras = findViewById(R.id.btnPalabras)
-        btnFragmentos = findViewById(R.id.btnFragmento)
+        btnFragmentos = findViewById(R.id.btnFragmentos)
 
         btnSolucionar.setOnClickListener {
             val cadenaIngresada = tvPalabras.text.toString()
@@ -36,7 +36,7 @@ class DosMitadesActivity : AppCompatActivity() {
         }
 
         btnMitades.setOnClickListener {
-            // Ya estás aquí
+
         }
 
         btnPalabras.setOnClickListener {
